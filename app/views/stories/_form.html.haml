@@ -1,0 +1,6 @@
+= simple_form_for(@story, html: { class: 'form-horizontal'}) do |f|
+ = f.input :title, label: "Story Tile"
+ = f.input :description, label: "Story Descriptopn"
+ = f.input :company, label: "Company"
+ %br/
+ = f.button :submit

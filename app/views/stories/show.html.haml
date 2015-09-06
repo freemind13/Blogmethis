@@ -1,0 +1,7 @@
+%h2= @story.title
+%p= @story.description
+%p= @story.company
+
+= link_to "Home", root_path
+= link_to "Edit", edit_story_path(@story)
+= link_to "Delete", story_path(@story), method: :delete, date: { confirm: "Are You Sure ? "}
