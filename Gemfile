@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 gem 'rails', '4.2.3'
-gem 'sqlite3'
+
 gem 'haml', '~> 4.0.7'
 gem 'bootstrap-sass', '~> 3.3.5'
 
@@ -18,10 +18,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 
 group :development, :test do
+	gem 'sqlite3', '~> 1.3.10'
   gem 'byebug'
 
   gem 'web-console', '~> 2.0'
 
   gem 'spring'
+end
+  group :production do
+  	gem 'pg'
 end
 
