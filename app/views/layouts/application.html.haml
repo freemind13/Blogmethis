@@ -15,7 +15,7 @@
 				%li= link_to "All Stories", root_path
 				- Category.all.each do |category|
 					%li= link_to category.name, stories_path(category: category.name)
-			= link_to "New Story", new_story_path, class: "navbar-text navbar-right navbar-link"
+			= link_to "New Story", new_story_path, class: "navbar-text navbar-center navbar-link"
 	.container
 		.col-md-6.col-md-offset-3
 			= yield
